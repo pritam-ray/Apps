@@ -1,39 +1,41 @@
 export default {
   expo: {
-    name: 'Travel Planner 2',
-    slug: 'Travel-Planner-2',
-    version: '1.0.5',
-    orientation: 'portrait',
-    icon: './assets/logo.jpg',
-    userInterfaceStyle: 'light',
+    name: "MIKA",
+    slug: "MIKA",
+    version: "1.0.5",
+    orientation: "portrait",
+    icon: "./assets/icon.png",
+    userInterfaceStyle: "light",
     splash: {
-      image: './assets/logo.jpg',
-      resizeMode: 'contain',
-      backgroundColor: '#ffffff'
+      image: "./assets/splash.jpg",
+      resizeMode: "contain",
+      backgroundColor: "#ffffff"
     },
     assetBundlePatterns: [
-      '**/*'
+      "**/*"
     ],
     android: {
-      package: 'com.yourcompany.travelplanner',
+      package: "com.pritam.mika",
+      versionCode: 1,
       adaptiveIcon: {
-        foregroundImage: './assets/logo.jpg',
-        backgroundColor: '#ffffff'
+        foregroundImage: "./assets/icon.png",
+        backgroundColor: "#ffffff"
       },
       permissions: [
-        'ACCESS_COARSE_LOCATION',
-        'ACCESS_FINE_LOCATION',
-        'CAMERA',
-        'WRITE_EXTERNAL_STORAGE'
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE"
       ]
     },
     extra: {
       eas: {
-        projectId: "d73b7983-b133-455a-8007-c2d14808b9d0"
+        projectId: "c9707979-f9d3-48d8-ad2d-d105c8b64f63y" 
       }
     },
-    plugins: [
-
-    ]
+    owner: "pritamray",
+    cli: {
+      appVersionSource: "remote"
+    }
   }
-};
+}

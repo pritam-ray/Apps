@@ -12,7 +12,7 @@ export const searchNearbyHotels = async (latitude: number, longitude: number, lo
       .select('*')
       .eq('location', location);
 
-    if (existingHotels?.length > 0) {
+    if (existingHotels && existingHotels.length > 0) {
       return existingHotels;
     }
 
